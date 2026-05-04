@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 3000
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{
   console.log("connected to db")
-  app.listen(PORT,()=>{
+  app.listen(PORT,'0.0.0.0',()=>{
         console.log(`Server @ ${PORT}`); }) 
      })
 .catch(err => {console.log("connection failed",err.message)})        
