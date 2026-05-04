@@ -7,7 +7,7 @@
 - Mongodb Atlas integration
 
 ## Setup
-1. Clone the repo `http://`
+1. Clone the repo `https://github.com/Lanzy1123/simple-crud-app.git`
 2. Install dependencies `npm install`
 3. Create a `.env` file in the root
 4. Run server `npm run dev` or `npm start`
