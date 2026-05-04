@@ -13,12 +13,22 @@
 4. Run server `npm run dev` or `npm start`
 
 ## Endpoints
-Methods |  Endpoints         |    Description
-GET.    |  /api/products     |  list all products
-GET     |  /api/products/:id |  list a single products via id
-POST    |  /api/products     |  add new products
-PUT     |  /api/products/:id |  update a specific product
-DELETE  |  /api/products/:id |  delete a single product
 
-parameters for post request
-name,quantity,price
+| Method | Endpoint           | Description                    |
+|--------|-------------------|--------------------------------|
+| GET    | `/api/products`   | List all products              |
+| GET    | `/api/products/:id` | Get a single product by ID   |
+| POST   | `/api/products`   | Add a new product              |
+| PUT    | `/api/products/:id` | Update a specific product    |
+| DELETE | `/api/products/:id` | Delete a single product      |
+
+## Parameters
+
+### POST Request Body
+```json
+{
+  "name": "string",
+  "quantity": "number",
+  "price": "number"
+}
+```
