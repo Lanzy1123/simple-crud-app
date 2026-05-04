@@ -15,6 +15,9 @@ app.use(exp.urlencoded({extended:false}));
 //routes
 app.use("/api/products",productRoutes);
 
+app.get('/', (req, res) => {
+  res.send('<h1>Product API is running...</h1>');
+});
 
 const PORT = process.env.PORT || 3000
 
